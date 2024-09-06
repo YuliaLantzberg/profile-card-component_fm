@@ -109,7 +109,7 @@ body {
 }
 .profile .profile__content .profile__user {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .profile .profile__content .profile__user .profile__user--info span {
   color: hsl(229, 23%, 23%);
@@ -117,6 +117,7 @@ body {
   margin-right: 0.5rem;
 }
 .profile .profile__content .profile__user .profile__user--city {
+  margin-top: 0.5rem;
   font-size: 1rem;
 }
 .profile .profile__content .profile__stats {
