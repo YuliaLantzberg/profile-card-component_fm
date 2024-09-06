@@ -77,7 +77,7 @@ body {
 .main-bg {
   background-image: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg");
   background-color: hsl(185, 75%, 39%);
-  background-position: top -12rem left -10rem, bottom -10rem right -8rem;
+  background-position: top -10rem left -10rem, bottom -10rem right -8rem;
   background-repeat: no-repeat, no-repeat;
   background-size: contain;
   display: grid;
@@ -91,6 +91,7 @@ body {
   place-items: center;
   border-radius: 0.5rem;
   overflow: hidden;
+  width: 21.875rem;
   min-width: 19.438rem;
   position: relative;
 }
@@ -106,7 +107,7 @@ body {
   z-index: 1000;
 }
 .profile .profile__content {
-  padding: 1.5rem;
+  padding: 1rem;
 }
 .profile .profile__content .profile__user {
   text-align: center;
