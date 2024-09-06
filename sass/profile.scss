@@ -1,0 +1,68 @@
+.profile {
+	background-color: $neutral-100;
+	display: grid;
+	place-items: center;
+	border-radius: 0.5rem;
+	overflow: hidden;
+
+	min-width: 19.438rem;
+	position: relative;
+
+	.profile__top-bg {
+		position: absolute;
+		top: 0;
+	}
+
+	.profile__user-img {
+		margin-top: 4.5rem;
+		border-radius: 50%;
+		border: solid 5px $neutral-100;
+		z-index: 1000;
+	}
+
+	.profile__content {
+		padding: 1rem;
+
+		.profile__user {
+			text-align: center;
+			margin-bottom: 1rem;
+			.profile__user--info {
+				span {
+					color: $primary-desaturated-blue-800;
+					font-weight: $fw-bold;
+					margin-right: 0.5rem;
+				}
+			}
+
+			.profile__user--city {
+				font-size: 1rem;
+			}
+		}
+
+		.profile__stats {
+			margin-top: 1rem;
+			margin-bottom: 0.5rem;
+			display: flex;
+			justify-content: space-between;
+			gap: 2rem;
+
+			.profile__stats--item {
+				text-align: center;
+				.profile__stats--num {
+					color: $primary-desaturated-blue-800;
+					font-weight: bold;
+				}
+				.profile__stats--title {
+					font-size: 0.7rem;
+					letter-spacing: 1px;
+				}
+			}
+		}
+
+		hr {
+			width: 200%;
+			margin-left: -5rem;
+			border: 1px solid $neutral-gray-400;
+		}
+	}
+}

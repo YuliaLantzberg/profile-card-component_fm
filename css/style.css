@@ -67,4 +67,80 @@ h6 {
   isolation: isolate;
 }
 
+body {
+  font-family: "Kumbh Sans";
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: hsl(227, 10%, 46%);
+}
+
+.main-bg {
+  background-image: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg");
+  background-color: hsl(185, 75%, 39%);
+  background-position: top -12rem left -10rem, bottom -10rem right -8rem;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.profile {
+  background-color: hsl(0, 0%, 100%);
+  display: grid;
+  place-items: center;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  min-width: 19.438rem;
+  position: relative;
+}
+.profile .profile__top-bg {
+  position: absolute;
+  top: 0;
+}
+.profile .profile__user-img {
+  margin-top: 4.5rem;
+  border-radius: 50%;
+  border: solid 5px hsl(0, 0%, 100%);
+  z-index: 1000;
+}
+.profile .profile__content {
+  padding: 1rem;
+}
+.profile .profile__content .profile__user {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.profile .profile__content .profile__user .profile__user--info span {
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+.profile .profile__content .profile__user .profile__user--city {
+  font-size: 1rem;
+}
+.profile .profile__content .profile__stats {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.profile .profile__content .profile__stats .profile__stats--item {
+  text-align: center;
+}
+.profile .profile__content .profile__stats .profile__stats--item .profile__stats--num {
+  color: hsl(229, 23%, 23%);
+  font-weight: bold;
+}
+.profile .profile__content .profile__stats .profile__stats--item .profile__stats--title {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+.profile .profile__content hr {
+  width: 200%;
+  margin-left: -5rem;
+  border: 1px solid hsl(0, 0%, 59%);
+}
+
 /*# sourceMappingURL=style.css.map */
