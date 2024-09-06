@@ -11,10 +11,11 @@
 	.profile__top-bg {
 		position: absolute;
 		top: 0;
+		min-height: 40%;
 	}
 
 	.profile__user-img {
-		margin-top: 4.5rem;
+		margin-top: 7rem;
 		border-radius: 50%;
 		border: solid 5px $neutral-100;
 		z-index: 1000;
