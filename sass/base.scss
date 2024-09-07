@@ -23,4 +23,18 @@ main {
 		bottom: -10rem;
 		right: -8rem;
 	}
+
+	@media (min-width: 23rem) {
+		.main__bg-top {
+			position: absolute;
+			top: -35rem;
+			left: -20rem;
+		}
+
+		.main__bg-bottom {
+			position: absolute;
+			bottom: -35rem;
+			right: -20rem;
+		}
+	}
 }
