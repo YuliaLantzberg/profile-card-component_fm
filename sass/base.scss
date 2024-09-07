@@ -5,15 +5,22 @@ body {
 	color: $primary-grayish-blue-500;
 }
 
-.main-bg {
-	background-image: url("images/bg-pattern-top.svg"),
-		url("images/bg-pattern-bottom.svg");
+main {
 	background-color: $primary-cyan-600;
-	background-position: top -10rem left -10rem, bottom -10rem right -8rem;
-	background-repeat: no-repeat, no-repeat;
-	background-size: contain;
-
 	display: grid;
 	place-content: center;
 	min-height: 100vh;
+	position: relative;
+
+	.main__bg-top {
+		position: absolute;
+		top: -10rem;
+		left: -8rem;
+	}
+
+	.main__bg-bottom {
+		position: absolute;
+		bottom: -10rem;
+		right: -8rem;
+	}
 }

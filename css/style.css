@@ -74,22 +74,29 @@ body {
   color: hsl(227, 10%, 46%);
 }
 
-.main-bg {
-  background-image: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg");
+main {
   background-color: hsl(185, 75%, 39%);
-  background-position: top -10rem left -10rem, bottom -10rem right -8rem;
-  background-repeat: no-repeat, no-repeat;
-  background-size: contain;
   display: grid;
   place-content: center;
   min-height: 100vh;
+  position: relative;
+}
+main .main__bg-top {
+  position: absolute;
+  top: -10rem;
+  left: -8rem;
+}
+main .main__bg-bottom {
+  position: absolute;
+  bottom: -10rem;
+  right: -8rem;
 }
 
 .profile {
   background-color: hsl(0, 0%, 100%);
   display: grid;
   place-items: center;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   overflow: hidden;
   width: 21.875rem;
   min-width: 19.438rem;
